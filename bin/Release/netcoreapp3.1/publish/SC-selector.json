@@ -1,0 +1,24 @@
+{
+  "scenario_name": "Scenario selector",
+  "start_id": "1000",
+  "steps": [
+    {
+      "id": "1000",
+      "text": "Есть проблема?",
+      "buttons": [
+        {
+          "label": "Решить?",
+          "color": "positive",
+	  "scenario_id": "9001",
+          "next_id": "1000"
+        },
+        {
+          "label": "Повторить?",
+          "color": "negative",
+	  "scenario_id": "9000",
+          "next_id": "1000"
+        }
+      ]
+    }
+  ]
+}

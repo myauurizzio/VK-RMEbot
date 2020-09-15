@@ -1,0 +1,158 @@
+{
+    "scenario_name": "Problem Solver",
+    "start_id": "1000",
+    "steps": [
+        {
+            "id": "1000",
+            "text": "Всё нормально?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "positive",
+                "next_id": "1100"
+              },
+              {
+                "label": "Нет",
+                "color": "negative",
+                "next_id": "1200"
+              }
+            ]
+        },
+        {
+            "id": "1100",
+            "text": "Не трогай!",
+            "buttons": [
+              {
+                "label": "Ок",
+                "color": "primary",
+                "next_id": "2000"
+              }
+            ]
+        },
+        {
+            "id": "1200",
+            "text": "Ты это трогал?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "negative",
+                "next_id": "1300"
+              },
+              {
+                "label": "Нет",
+                "color": "positive",
+                "next_id": "1400"
+              }
+            ]
+        },
+        {
+            "id": "1300",
+            "text": "Ты идиот?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "negative",
+                "next_id": "3000"
+              },
+              {
+                "label": "Нет",
+                "color": "positive",
+                "next_id": "1500"
+              }
+            ]
+        },
+        {
+            "id": "1400",
+            "text": "Тебе это надо?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "negative",
+                "next_id": "3000"
+              },
+              {
+                "label": "Нет",
+                "color": "positive",
+                "next_id": "1600"
+              }
+            ]
+        },
+        {
+            "id": "1500",
+            "text": "Кто-нибудь знает?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "negative",
+                "next_id": "3000"
+              },
+              {
+                "label": "Нет",
+                "color": "positive",
+                "next_id": "1700"
+              }
+            ]
+        },
+        {
+            "id": "1600",
+            "text": "Притворись, что не видел.",
+            "buttons": [
+              {
+                "label": "Ок",
+                "color": "primary",
+                "next_id": "2000"
+              },
+            ]
+        },
+        {
+            "id": "1700",
+            "text": "Надо спрятать.",
+            "buttons": [
+              {
+                "label": "Ок",
+                "color": "primary",
+                "next_id": "2000"
+              },
+            ]
+        },
+        {
+            "id": "1800",
+            "text": "Можно свалить на другого?",
+            "buttons": [
+              {
+                "label": "Да",
+                "color": "positive",
+                "next_id": "2000"
+              },
+              {
+                "label": "Нет",
+                "color": "negative",
+                "next_id": "3000"
+              }
+            ]
+        },
+        {
+            "id": "2000",
+            "text": "Вот и нет проблемы!",
+            "buttons": [
+              {
+                "label": "Ок",
+                "color": "primary",
+		"scenario_id": "9000",
+                "next_id": "1000"
+              },
+            ]
+        },
+        {
+            "id": "3000",
+            "text": "Ты попал!",
+            "buttons": [
+              {
+                "label": "Ок",
+                "color": "primary",
+                "next_id": "1800"
+              },
+            ]
+        },
+    ]
+}
